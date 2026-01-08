@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Built-in Methods Example</title>
+    <link 
+</head>
+<body>
+
+    <script>
+        // Array of strings
+        let fruits = ["aple", "orange", "banana"];
+
+        // Convert strings to uppercase
+        let uppercaseFruits = fruits.map(function(fruit) {
+            return fruit.toUpperCase();
+        });
+
+        // Join uppercase strings into a single string
+        let resultString = uppercaseFruits.join(", ");
+
+        // Display the result
+        console.log("Original Array:", fruits);
+        console.log("Uppercase Strings:", uppercaseFruits);
+        console.log("Result String:", resultString);
+
+        // Display the result on the webpage
+        document.body.innerHTML = `
+            <p>Original Array: ${fruits}</p>
+            <p>Uppercase Strings: ${uppercaseFruits}</p>
+            <p>Result String: ${resultString}</p>
+        `;
+    </script>
+
+</body>
+</html>
